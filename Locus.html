@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en-US"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Locus</title>
+<link rel="stylesheet" id="twentytwelve-style-css" target="_blank" href="./css/style.css" type="text/css" media="all">
+</head>
+
+<body class="home blog admin-bar no-customize-support full-width custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header class="site-header">
+		
+		<div class="post-container" style="height:65px">
+			<div class="post-thumb" style="padding-top:10px">
+					<h1 class="site-title"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/" title="Ming WEN&#39;s Homepage" rel="home">Ming WEN's Project</a></h1>
+			</div>
+			<div class="post-content" style="height:65px">
+				<a target="_blank" href="http://www.ust.hk"><img src="./image/hkust_icon.png" width="400" style="margin-left:180px"></a>
+			</div>
+		</div>
+<!--
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" target="_blank" href="http://www.cse.ust.hk/~mwenaa/#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul><li class="current_page_item"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/">Home</a></li><li class="page_item page-item-23"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/research/">Research</a></li><li class="page_item page-item-50"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/teaching/">Experience</a></li><li class="page_item page-item-25"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/photography/">Photography</a></li><li class="page_item page-item-28"><a target="_blank" href="http://www.cse.ust.hk/~mwenaa/contact/">Contact</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+
+	</header>
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+										
+	<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-research">
+				
+			
+		<div class="entry-content">
+			
+		<h1 style="margin:-2px 0 0 0; color:rgb(0, 57, 116); font-size:30px"> Locus: Locating Bugs from Software Changes</h1>
+		
+		<h2> Abstract </h2>
+		<p> Various information retrieval (IR) based techniques have been proposed recently to locate bugs automatically at file level. However, their usefulness is often compromised by the coarse granularity of files and the lack of contextual information. To address this, we propose to locate bugs using software changes, which over offer granularity than files and provide important contextual clues for bug-fixing.
+We observed that bug inducing changes can facilitate the bug fixing process. For example, it helps triage the bug fixing task to the developers who committed the bug inducing
+changes or enables developers to fix bugs by reverting these changes. Our study further identifies that change logs and
+the naturally small granularity of changes can help boost the performance of IR-based bug localization. Motivated by these observations, we propose an IR-based approach
+Locus to locate bugs from software changes, and evaluate it on six large open source projects. The results show that
+Locus outperforms existing techniques at source file level localization signifcantly, specifcally the MAP and MRR have
+been improved for 20:1% and 20:5% on average. Besides, Locus is also capable of locating the inducing changes within top 5 for 41:0% of the bugs. The results show that Locus can signifcantly reduce the number of lines need to be scanned to locate the bug compared with existing techniques.</p>
+
+		<h2> Dataset </h2>
+<ol>
+<li><strong><span style="color: #003974; font-size:16px;">ZXing:</a></span></Strong>
+ZXing ("zebra crossing") is an open-source, multi-format 1D/2D barcode image processing library implemented in Java, with ports to other languages.
+<span>[<a href="https://github.com/zxing/zxing" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/ZXing.zip">Dataset</a>]</span><span>[<a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bugcenter/ZXing-1.6.zip">SourceFile</a>]</span>
+</li>
+
+<li><strong><span style="color: #003974; font-size:16px;">AspectJ:</a></span></Strong>
+AspectJ is an aspect-oriented programming (AOP) extension created at PARC for the Java programming language.<span>[<a href="https://github.com/eclipse/org.aspectj" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/AspectJ.zip">Dataset</a>]</span><span>[<a href="http://sccpu2.cse.ust.hk/Locus/org.aspectj-1_5_0M2.zip">SourceFile</a>]</span>
+</li>
+
+<li><strong><span style="color: #003974; font-size:16px;">SWT 3.1:</a></span></Strong>
+SWT is an open source widget toolkit for Java designed to provide efficient, portable access to the user-interface facilities of the operating systems on which it is implemented.<span>[<a href="https://github.com/eclipse/eclipse.platform.swt" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/SWT.zip">Dataset</a>]</span><span>[<a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/bugcenter/swt-3.1.zip">SourceFile</a>]</span>
+</li>
+
+<li><strong><span style="color: #003974; font-size:16px;">JDT Core 4.5:</a></span></Strong>
+This is the core part of Eclipse's Java development tools. It contains the non-UI support for compiling and working with Java code.
+<span>[<a href="https://github.com/eclipse/eclipse.jdt.core" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/JDT.zip">Dataset</a>]</span><span>[<a href="http://sccpu2.cse.ust.hk/Locus/eclipse.jdt.core-R4_5.zip">SourceFile</a>]</span>
+</li>
+
+<li><strong><span style="color: #003974; font-size:16px;">PDE UI 4.4:</a></span></Strong>
+The Plug-in Development Environment (PDE) provides tools to create, develop, test, debug, build and deploy Eclipse plug-ins, fragments, features, update sites and RCP products. <span>[<a href="https://github.com/eclipse/eclipse.pde.ui" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/PDE.zip">Dataset</a>]</span><span>[<a href="http://sccpu2.cse.ust.hk/Locus/eclipse.pde.ui-R4_4.zip">SourceFile</a>]</span>
+</li>
+
+<li><strong><span style="color: #003974; font-size:16px;">Tomcat 8.0:</a></span></Strong>
+The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. <span>[<a href="https://github.com/apache/tomcat" target = "blank">Repository</a>]</span>
+<span>[<a href="http://sccpu2.cse.ust.hk/Locus/Tomcat.zip">Dataset</a>]</span><span>[<a href="http://sccpu2.cse.ust.hk/Locus/Tomcat_8.0.zip">SourceFile</a>]</span>
+</li>
+</ol>
+
+For each project, the zip file contains the following six files: </br>
+<i style="color: #003974">bugRepository.xml:</i> This contains the information of all bugs and the format is in consistent with the benchmark <a href="http://ieeexplore.ieee.org/document/6227210/?arnumber=6227210&tag=1">BugLocator.</a></br>
+<i style="color: #003974">bugLink.txt:</i> This file contains the links between bugs and the fixing changes. The format is &ltBug Id&gt\t&ltCommit Id&gt.</br>
+<i style="color: #003974">changeOracles.txt:</i> This file contains the links between bugs and the inducing changes. The inducing changes are automatically identified by the <a href="http://dl.acm.org/citation.cfm?id=1083147">SZZ algorithm </a>. The format is &ltBug Id&gt\t&ltCommit Id&gt\t&ltCommit Id&gt....</br>
+<i style="color: #003974">sourceFilesIndex.txt:</i> This file contains the list of the source files. The format is &ltFile Id&gt\t&ltFile Location&gt.</br>
+<i style="color: #003974">fileFixSus.txt:</i> This file contains the suspicious value of each source file towards a bug. The format is &ltBug Id&gt\t&ltFile Id&gt:&ltSuspicious&gt\t&ltFile Id&gt:&ltSuspicious&gt....</br>
+
+		<h2> Implementation </h2>
+		Please refer to project <a href="https://github.com/justinwm/Locus/">Locus</a>. If you have any questions for reproducing the results or intentions for cooporation, you are welcome to drop me an email. Thanks.
+		
+		
+		
+		
+		<h2> Citation </h2>
+		<pre style="text-align:left; padding:0 0 0 0; margin:0 0 0 0;">
+ @inproceedings{wen2016locus,
+	title={Locus: locating bugs from software changes},
+	author={Wen, Ming and Wu, Rongxin and Cheung, Shing-Chi},
+	booktitle={Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering},
+	pages={262--273},
+	year={2016},
+	organization={ACM}
+ }</pre>
+		<!--		
+			<div>
+				<div style="float:left">
+					<img src="./image/protrait1.jpg" alt="protrait" width="200" style="float:left; margin: 10px 40px 0px 0px;"/>
+				</div>
+			
+			
+			<div class="">
+					<h1 style="margin:0 0 0 0"> Ming WEN (文明) </h1>
+					<p style="margin:-2px 0 0 0" class ="civi_addr"> <a target="_blank" href= "http://www.cse.ust.hk">Department of Computer Science and Engineering</a> </p>
+					<p style="margin:-5px 0 0 0" class ="civi_addr"> <a target="_blank" href= "http://www.ust.hk">the Hong Kong University of Science and Technology</a></p>
+					<p style="margin:-5px 0 0 0"> Clear Water Bay, Kowloon, Hong Kong </p>
+					
+					<p style="margin:10px 0 0 0" class ="civi_addr">Office: Room 3663,&nbsp; Lift 31/32</p>
+					<p style="margin:-5px 0 0 0" class ="civi_addr">Email: mwenaa&nbsp;[-AT-]&nbsp;cse.ust.hk</p>
+					
+					
+					<p style="margin:15px 0 0 0">			
+					I am currently a postgraduate student in the second year from the department of <a target="_blank" href= "http://www.cse.ust.hk"><strong><span style="color: #003974"> Computer Science and Engineering</span></strong></a>&nbsp; of <a target="_blank" href="http://www.ust.hk"><strong><span style="color: #003974"> the Hong Kong University of Science and Technology</span></strong></a>. It's my honour to be supervised by <a target="_blank" href= "http://www.cse.ust.hk/faculty/scc/"><strong><span style="color: #003974">Prof. Shing-Chi CHEUNG</span></strong></a>.
+					My research interests are mainly in program analysis, mining software changes and defect prediction. Before joining HKUST, I received my Bachelor Degree of Engineering in June 2014 from the <a target="_blank" href= "http://www.cs.zju.edu.cn/english/"><strong><span style="color: #a78337">Colloge of Computer Science and Technology</span></strong></a>&nbsp; of <a target="_blank" href= "http://www.zju.edu.cn/english/"><strong><span style="color: #a78337">Zhejiang University</span></strong></a>.</p>
+				
+				</div>
+			</div>
+-->			
+
+</div><!-- .entry-content -->
+		
+<footer class="entry-meta">
+			This page was updated on <time class="entry-date">Sep 19, 2016</time> by Ming.								
+</footer><!-- .entry-meta -->
+</article><!-- #post -->
+			
+			
+</div>
+</div>		
+</div><!-- #content -->
+</div><!-- #primary -->
+
+
+
+</body></html>
