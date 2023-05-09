@@ -259,6 +259,7 @@ body {
   /*max-width: 900px;*/
   margin: 0 auto !important;
   float: none !important;
+  overflow-y: scroll;
   /*padding: 10px; !* TODO Ask if wanted *!*/
 }
 
