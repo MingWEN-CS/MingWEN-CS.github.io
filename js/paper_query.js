@@ -307,8 +307,8 @@ function paperQuery() {
 
                 result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><b>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
-                result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + paperInfo['AUTHOR'] + '<br/>'
-                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In' + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
+                result = result +     + paperInfo['AUTHOR'] + '<br/>'
+                    + 'In ' + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
@@ -327,10 +327,10 @@ function paperQuery() {
                 //
                 // result = result + "</p>";
 
-                result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><i><b>" + paperInfo['TITLE'] + "</b></i><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
+                result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><b>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
-                result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  paperInfo['AUTHOR'] + '<br/>  '
-                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In' + paperInfo['BOOKTITLE'];
+                result = result +     +  paperInfo['AUTHOR'] + '<br/>  '
+                    + 'In&nbsp;' + paperInfo['BOOKTITLE'];
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
@@ -361,7 +361,7 @@ function paperQuery() {
             // result = result + "</p>";
 
             result = result + "<br/>";
-            result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + "[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
+            result = result +     + "[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
 
             if (sc.hasAttribute("code")) {
                 var code = sc.getAttribute("code");
