@@ -308,7 +308,7 @@ function paperQuery() {
                 result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><b>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
                 result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + paperInfo['AUTHOR'] + '<br/>'
-                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
+                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In' + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
@@ -329,8 +329,8 @@ function paperQuery() {
 
                 result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><i><b>" + paperInfo['TITLE'] + "</b></i><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
-                result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  paperInfo['AUTHOR'] + '<br/> In '
-                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + paperInfo['BOOKTITLE'];
+                result = result + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +  paperInfo['AUTHOR'] + '<br/>  '
+                    + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In' + paperInfo['BOOKTITLE'];
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
