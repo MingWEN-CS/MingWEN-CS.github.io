@@ -361,7 +361,7 @@ function paperQuery() {
             // result = result + "</p>";
 
             result = result + "<br/>";
-            result = result +     + "[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
+            result = result + "[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
 
             if (sc.hasAttribute("code")) {
                 var code = sc.getAttribute("code");
