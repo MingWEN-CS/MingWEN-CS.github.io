@@ -307,7 +307,7 @@ function paperQuery() {
 
                 result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><b>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
-                result = result +     + paperInfo['AUTHOR'] + '<br/>'
+                result = result   + paperInfo['AUTHOR'] + '<br/>'
                     + 'In ' + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
@@ -329,7 +329,7 @@ function paperQuery() {
 
                 result = result + "<strong><span style=\"color: #337AB7\">[" + CI + "] </span></strong><b>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
-                result = result +     +  paperInfo['AUTHOR'] + '<br/>  '
+                result = result  +  paperInfo['AUTHOR'] + '<br/>'
                     + 'In&nbsp;' + paperInfo['BOOKTITLE'];
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
