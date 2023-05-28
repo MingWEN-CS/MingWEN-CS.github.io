@@ -10,15 +10,16 @@
 
         .list-group-item {
             display: list-item !important;
-            counter-increment: my-counter;
-            / border: 0 !important; /
+            list-style-type: decimal;
+            /*counter-increment: my-counter;*/
+            /*border: 0 !important;*/
         }
 
-        .list-group-item:before {
-            content: counter(my-counter) ". ";
-            display: inline-block;
-            margin-right: 1px;
-        }
+        /*.list-group-item:before {*/
+        /*    !*content: counter(my-counter) ". ";*!*/
+        /*    !*display: inline-block;*!*/
+        /*    margin-right: 1px;*/
+        /*}*/
     </style>
 
     <title>Ming Wen</title>
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="css/main.css">
 <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
 <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<!--    <script src='js/paper_query.js'></script>-->
 </head>
 
 <body>
@@ -136,196 +138,10 @@
                  [<a target="_blank" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9903287&isnumber=10103953">Paper</a>]
             [<a target="_blank" href="https://github.com/justinwm/IsoVar">Code</a>]
         </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Isolating Compiler Optimization Faults via Differentiating Finer-grained Options.bib"
-                    CI="SANER’22" level="CCF-B"></script>
-            <span id="paper/Isolating Compiler Optimization Faults via Differentiating Finer-grained Options.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/DeepFD Automated Fault Diagnosis and Localization for Deep Learning Programs.bib"
-                    CI="ICSE’22" level="CCF-A" code="https://github.com/ArabelaTso/DeepFD"></script>
-            <span id="paper/DeepFD Automated Fault Diagnosis and Localization for Deep Learning Programs.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Context-Aware Code Change Embedding for Better Patch Correctness Assessment.bib"
-                    CI="TOSEM’21" level="CCF-A" code="https://github.com/Ringbo/Cache"></script>
-            <span id="paper/Context-Aware Code Change Embedding for Better Patch Correctness Assessment.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Aroc An Automatic Repair Framework for On-Chain Smart Contracts.bib" CI="TSE’21"
-                    level="CCF-A"></script>
-            <span id="paper/Aroc An Automatic Repair Framework for On-Chain Smart Contracts.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/SemMT A Semantic-Based Testing Approach for Machine Translation Systems.bib"
-                    CI="TOSEM’21" level="CCF-A" code="https://github.com/ArabelaTso/SemMT"></script>
-            <span id="paper/SemMT A Semantic-Based Testing Approach for Machine Translation Systems.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Why Do Developers Remove Lambda Expressions in Java.bib" CI="ASE’21"
-                    level="CCF-A" data="https://github.com/CGCL-codes/LambdaMisuse"></script>
-            <span id="paper/Why Do Developers Remove Lambda Expressions in Java.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Characterizing Transaction-Reverting Statements in Ethereum Smart Contracts.bib"
-                    CI="ASE’21" level="CCF-A"></script>
-            <span id="paper/Characterizing Transaction-Reverting Statements in Ethereum Smart Contracts.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Characterizing and Detecting Configuration Compatibility Issues in Android Apps.bib"
-                    CI="ASE’21" level="CCF-A"></script>
-            <span id="paper/Characterizing and Detecting Configuration Compatibility Issues in Android Apps.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/To what extent do DNN-based image classification models make unreliable inferences.bib"
-                    CI="EmSE’21" level="CCF-B" code="https://github.com/yqtianust/PaperUnreliableInference"></script>
-            <span id="paper/To what extent do DNN-based image classification models make unreliable inferences.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Lightweight global and local contexts guided method name recommendation with prior knowledge.bib"
-                    CI="ESEC/FSE’21" level="CCF-A" code="https://github.com/ShangwenWang/Cognac"></script>
-            <span id="paper/Lightweight global and local contexts guided method name recommendation with prior knowledge.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Will Dependency Conflicts Affect My Program's Semantics.bib" CI="TSE’21"
-                    level="CCF-A" data="https://sensordc.github.io/"></script>
-            <span id="paper/Will Dependency Conflicts Affect My Program's Semantics.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Understanding and Facilitating the Co-Evolution of Production and Test Code.bib"
-                    CI="SANER’21" level="CCF-B" data="https://github.com/sqlab-sustech/Sitar-project"></script>
-            <span id="paper/Understanding and Facilitating the Co-Evolution of Production and Test Code.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/An Exploratory Study of Bugs in Extended Reality Applications on the Web.bib"
-                    CI="ISSRE’20" level="CCF-B" data="https://sites.google.com/view/webxr-bug-study/"></script>
-            <span id="paper/An Exploratory Study of Bugs in Extended Reality Applications on the Web.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Automated Patch Correctness Assessment How Far are We.bib" CI="ASE’20"
-                    level="CCF-A" data="http://doi.org/10.5281/zenodo.3730599"></script>
-            <span id="paper/Automated Patch Correctness Assessment How Far are We.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/MockSniffer Characterizing and Recommending Mocking Decisions for Unit Tests.bib"
-                    CI="ASE’20" level="CCF-A" code="https://github.com/henryhchchc/MockSniffer"
-                    data="https://doi.org/10.5281/zenodo.3783869"></script>
-            <span id="paper/MockSniffer Characterizing and Recommending Mocking Decisions for Unit Tests.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/EvalDNN a toolbox for evaluating deep neural network models.bib"
-                    CI="ICSE-Demonstrations’20" level="" code="https://github.com/yqtianust/EvalDNN"
-                    benchmark="https://yqtianust.github.io/EvalDNN-benchmark/"
-                    demo="https://youtu.be/v69bNJN2bJc"></script>
-            <span id="paper/EvalDNN a toolbox for evaluating deep neural network models.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Boosting automated program repair with bug-inducing commits.bib" CI="ICSE-NIER’20"
-                    level=""></script>
-            <span id="paper/Boosting automated program repair with bug-inducing commits.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Watchman monitoring dependency conflicts for Python library ecosystem.bib" CI="ICSE’20"
-                    level="CCF-A"
-                    code="http://www.watchman-pypi.com/"></script>
-            <span id="paper/Watchman monitoring dependency conflicts for Python library ecosystem.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/How Do Python Framework APIs Evolve An Exploratory Study.bib" CI="SANER’20"
-                    level="CCF-B" code="https://github.com/sqlab-sustech/PyCompat"
-                    data="https://doi.org/10.5281/zenodo.2756358"></script>
-            <span id="paper/How Do Python Framework APIs Evolve An Exploratory Study.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Historical Spectrum Based Fault Localization.bib" CI="TSE’20" level="CCF-A"
-                    data="https://github.com/justinwm/HSFL"></script>
-            <span id="paper/Historical Spectrum Based Fault Localization.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/How Different Is It Between Machine-Generated and Developer-Provided Patches.bib"
-                    CI="ESEM’19" level="CCF-B" data="https://github.com/Kaka727/correct_patch_analysis"></script>
-            <span id="paper/How Different Is It Between Machine-Generated and Developer-Provided Patches.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Exploring and exploiting the correlations between bug-inducing and bug-fixing commits.bib"
-                    CI="ESEC/FSE’19" level="CCF-A" data="https://github.com/justinwm/InduceBenchmark"></script>
-            <span id="paper/Exploring and exploiting the correlations between bug-inducing and bug-fixing commits.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Attention Please Consider Mockito when Evaluating Newly Proposed Automated Program Repair Techniques.bib"
-                    CI="EASE’19" level="" data="https://github.com/Kaka727/Mockito-Study"></script>
-            <span id="paper/Attention Please Consider Mockito when Evaluating Newly Proposed Automated Program Repair Techniques.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Exposing library API misuses via mutation analysis.bib" CI="ICSE’19"
-                    level="CCF-A"></script>
-            <span id="paper/Exposing library API misuses via mutation analysis.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Could I have a stack trace to examine the dependency conflict issue.bib" CI="ICSE’19"
-                    level="CCF-A" code="https://skillwind.github.io/RiddleDC/index.html"></script>
-            <span id="paper/Could I have a stack trace to examine the dependency conflict issue.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/How Well Do Change Sequences Predict Defects Sequence Learning from Software Changes.bib"
-                    CI="TSE’18" level="CCF-A"></script>
-            <span id="paper/How Well Do Change Sequences Predict Defects Sequence Learning from Software Changes.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Do the dependency conflicts in my project matter.bib" CI="ESEC/FSE’18"
-                    level="CCF-A" code="https://deccadc.github.io/fse18/"></script>
-            <span id="paper/Do the dependency conflicts in my project matter.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Context-aware patch generation for better automated program repair.bib" CI="ICSE’18"
-                    level="CCF-A" code="https://github.com/justinwm/CapGen"></script>
-            <span id="paper/Context-aware patch generation for better automated program repair.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/ChangeLocator locate crash-inducing changes based on crash reports.bib" CI="EmSE’17"
-                    level="CCF-B" data="https://bitbucket.org/rongxin/changelocator-dataset.git"></script>
-            <span id="paper/ChangeLocator locate crash-inducing changes based on crash reports.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/Locus locating bugs from software changes.bib" CI="ASE’16" level="CCF-A"></script>
-            <span id="paper/Locus locating bugs from software changes.bib"></span>
-        </li>
-        <li class="list-group-item">
-            <script type='text/javascript' src='js/paper_query.js'
-                    bib="paper/An empirical study of bug report field reassignment.bib" CI="SANER’14"
-                    level="CCF-B"></script>
-            <span id="paper/An empirical study of bug report field reassignment.bib"></span>
-        </li>
+        <script type='text/javascript' src='js/paper_query.js'></script>
+        <span id="allBibPaper"></span>
+
+
     </ol>
 </div>
 </body>

@@ -642,7 +642,8 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
     transform: rotate3d(0, 0, 1, -45deg)
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .sticky {
         clear: both;
         position: -webkit-sticky;
@@ -2486,7 +2487,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     }
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .page {
         width: 83.0508474576%;
         float: right;
@@ -3238,7 +3240,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     display: table
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .sidebar {
         width: 15.2542372881%;
         float: left;
@@ -3284,7 +3287,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     margin-bottom: 1em
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .sidebar__right {
         position: relative;
         float: right;
@@ -3307,7 +3311,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     align-items: center;
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+@media (min-width: 80em) {
     .profile_box {
         display: block
     }
@@ -3319,7 +3324,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     width: 75px
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__avatar {
         display: block;
         width: auto;
@@ -3333,7 +3339,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     border-radius: 50%
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__avatar img {
         padding: 5px;
         border: 1px solid #f2f3f3
@@ -3348,7 +3355,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     line-height: 1
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__content {
         display: block;
         width: 100%;
@@ -3361,7 +3369,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     margin: 0
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__name {
         margin-top: 10px;
         margin-bottom: 10px
@@ -3407,7 +3416,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     margin-bottom: 0
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__urls-wrapper {
         display: block
     }
@@ -3440,7 +3450,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     cursor: default
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__urls {
         display: block;
         position: relative;
@@ -3465,7 +3476,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     z-index: 0
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__urls:before {
         display: none
     }
@@ -3484,7 +3496,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     z-index: 1
 }
 
-@media (min-width: 57.8125em) {
+/*@media (min-width: 57.8125em) {*/
+    @media (min-width: 80em) {
     .author__urls:after {
         display: none
     }
@@ -9366,7 +9379,8 @@ h1:before, .anchor:before {
     font-size: .8em
 }
 
-@media(max-width: 57.8125em) {
+/*@media(max-width: 57.8125em) {*/
+    @media(max-width: 80em) {
     .map {
         display: none;
     }
