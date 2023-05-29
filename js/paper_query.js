@@ -583,7 +583,7 @@ function allPaperQuery() {
 
     // fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
 //    fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
-    fetch('../paper/')
+    fetch('./paper/')
     // fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/', {
     //     headers: {
     //         'Authorization': 'token ' + accessToken
